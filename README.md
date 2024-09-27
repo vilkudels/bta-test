@@ -1,4 +1,4 @@
-# BTA Mājasdarbs
+# BTA testēšanas uzdevums
 
 ## Projekta apraksts
 Šajā projektā atrodams BTA testēšanas uzdevums par ceļojumu polisēm.
