@@ -9,4 +9,6 @@ public class PolicyChoicePage {
     public static final SelenideElement policyInfoDialog = $(".single-popup-focus");
     public static final SelenideElement closePopupButton = $(".popup-close");
     public static final SelenideElement goldPolicySelectButton = $("button[data-param*='GOLD'][data-broadcast-one-wrapper='selectAndSubmit']");
+    public static final SelenideElement policyChoices = $(".policy-items");
 }
+

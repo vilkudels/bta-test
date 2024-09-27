@@ -3,6 +3,8 @@ package tests;
 import org.junit.jupiter.api.Test;
 import pages.*;
 
+import java.time.Duration;
+
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.open;
@@ -40,6 +42,7 @@ public class TravelInsuranceTest {
         TravelInsuranceFormPage.offerButton.scrollIntoView("{behavior: \"instant\", block: \"center\", inline: \"center\"}").click();
 
         // choose policy type
+        PolicyChoicePage.policyChoices.shouldBe(visible, Duration.ofSeconds(10));
         PolicyChoicePage.goldPolicyShowButton.scrollIntoView("{behavior: \"instant\", block: \"center\", inline: \"center\"}").click();
         assert (PolicyChoicePage.policyInfoDialog.isDisplayed());
         PolicyChoicePage.closePopupButton.click();
